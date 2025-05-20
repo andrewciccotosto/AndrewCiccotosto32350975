@@ -22,3 +22,6 @@ Architecture is 64-bit
 *   SSH - Ensure port is 22 - Source 0.0.0.0/0
 *   HTTPS - Ensure port is 443 - Source 0.0.0.0/0
 *   HTTP - Ensure port is 80 - Source 0.0.0.0/0
+
+    
+All other settings can remain as default. Once this has been completed, click "Launch Instance"
