@@ -14,7 +14,8 @@ Architecture is 64-bit
 ### Key pair (login) is required
 * Select "Create new key pair"  
 * Enter a name for your Key pair. For example, "Server_Project_ICT171" - Ensure the key file format is .pem  
-* Select "Create Key Pair"  
+* Select "Create Key Pair"
+* Download your .pem key and save to the computer that you will be using to access your AWS Ubuntu machine
 
 ### Network Settings
 * Select the "Edit" button in the right-hand corner
