@@ -12,3 +12,5 @@ Now we need to connect to the newly created AWS Ubuntu Server using SSH.
   
 ![image](https://github.com/user-attachments/assets/6d19c3e2-541a-4fc4-abaf-c7fa8a093ca5) 
 
+Terminal should now be asking if you wish to continue connecting - Type "Yes"  
+You should now be connected to your Web Server - This is known by the command line no longer having the physical computers name or location but the username of the cloud server
