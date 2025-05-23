@@ -6,5 +6,13 @@
 * Scroll down and select "Registered Domains", and then select "Register Domains" in the top right corner.  
 * Enter the domain name that you wish to use - in this scenario, it is "andrewciccotosto.com". Note that different Top-Level Domains (TLDs) range in pricing; pick an appropriate one.  
 
-## Creating an A
+## Creating an A record
+Creating an "A record" for the DNS is essentially linking the Public IP address to the created domain name so that the visitors only have to type in your domain name. To do this:
+
 * When the domain has been registered, go to "Hosted Zones" and click on the registered domain name.
+* Create a record for the chosen domain name
+* Choose "Simple routing" and click next
+* Click "Define simple record" and make sure that the record type is "A"
+* Enter the public IP address under "Route Traffic to"
+* Once completed, click define simple record
+When visitors type in your DNS, this should now route to the public IP Address
