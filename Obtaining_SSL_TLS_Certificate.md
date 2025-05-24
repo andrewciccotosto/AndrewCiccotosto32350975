@@ -6,4 +6,12 @@ To obtain a digital certificate (SSL/TLS protocol), LetsEncrypt is going to be u
 
 * SSH into your AWS Ubuntu server and install snapd using the following: sudo apt install snapd
 * Once installed, we will need to install Certbot using: sudo snap install --classic certbot (Please note that this may take a while)
-* 
+After Certbot has been installed, a certificate needs to be generated. Follow below:
+* In terminal, type in: "sudo certbot --apache"
+* You will be asked to enter an email address. Click enter to skip
+* Type in "Y" to agree to the Terms of Service
+* Enter your domain name that was created in the previous step - This should be the one with the "A Record" pointing towards the public IPv4 address of your AWS Ubuntu Server
+* Once entered, to test if this has worked, head to your webserver via the domain name (andrewciccotosto.com) and this should be using the HTTPS:// now. Example shown below
+* ![image](https://github.com/user-attachments/assets/d3313a40-bc66-44a5-a6a0-3b50630b3137)
+
+
