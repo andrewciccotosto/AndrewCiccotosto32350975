@@ -14,5 +14,9 @@ This should now bring you to the location "/var/www/html".
 If you type in ls, there should be a file called "index.html" To change the web page that is visible to the public, we will need to edit this.
 * Type in: "sudo nano index.html" - This is giving us superuser access to edit the index.html file, which is the home page for the website.
 
-Now, we are going to want to remove all the default Apache2 HTML code. The website we are creating is very basic, so not much code is needed. 
+
+
+Now, we are going to want to remove all the default Apache2 HTML code. The website we are creating is very basic, so not much code is needed.   
+This is inspired by Joshdick (n.d) - Referencing at the end of the document.  
+
 
