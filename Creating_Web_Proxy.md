@@ -37,38 +37,45 @@ Once all the code is removed, we are going to start writing the code for the web
 Use the below: 
 
 ```
-?php
+<?php
  
  
 if (!isset($_GET['url'])) {
+
 ?>
 <title>Andrews Web Based Proxy</title>
 <img src="Untitled.png" alt="Andrew's Web Based Proxy" />
 <form>
-  <input name="url" placeholder="Enter your destination - The protocol is needed. E.g https://whatsmyip.com" style="width:700px;" />
-  <button>Enter</button>
+<input name="url" placeholder="Enter your destination - The protocol is needed. E.g https://whatsmyip.com" style="width:700px;" />
+<button>Enter</button>
 </form>
  
-<img src="gplv3.png" alt="GPLV3 License" />
+<img src="gplv3-with-text-136x68.png" alt="GPLV3 License" />
  
 <?php
+
     exit;
+
 }
  
  
 $url = $_GET['url'];
 
-$page = @file_get_contents($url);
+$proxy = @file_get_contents($url);
  
-echo $page ? $page : "Page not found - ensure that the protocol is entered and try again"
+echo $proxy ? $proxy : "Page not found - ensure that the protocol is entered and try again"
  
 ?>
  
 <a href="https://andrewciccotosto.com">
 <button>Go Back</button>
 </a>
-```
 
+ 
+</a>
+```
+The above is inspired by Joshdick (n.d) - Referencing at the end of the document.  
+  
 Once copied in, you will then want to:
 * Click "Ctrl + X" to exit.
 * "Y"
@@ -89,10 +96,12 @@ line will not run. This will show the web page first, and then when a user click
 This also 
 
 ```
-$page = @file_get_contents($url);
-echo $page;
+$proxy = @file_get_contents($url);
+echo $proxy ? $proxy : "Page not found - ensure that the protocol is entered and try again"; 
 ```
 The above line works when the user presses enter. The "@" symbol is forcing the page to load and does not advise of any errors. This line is the start of what causes the destination URL to appear after the URL of the web-based proxy server. The "echo" line then completes the job and results in the following: https://andrewciccotosto.com/?url=https%3A%2F%2Fwhatsmyip.com.  
+  
+The "$proxy : "Page not found - ensure that the protocol is entered and try again";" is put in use when there is a URL entered that does not contain the protocol or the $url is unable to download the website name. If either one of these occur, the "Page not found" will show for the user and the will have the option to go back and try an appropriate website url.
 
 ```
 <img src="Untitled.png" alt="Andrew's Web Based Proxy" />
@@ -102,6 +111,6 @@ The above lines are placing the images that are saved in the /html/ directory on
 
 
 
-This is inspired by Joshdick (n.d) - Referencing at the end of the document.  
+This is inspired by Joshdick (n.d) Miniproxy - Referencing at the end of the document.  
 
 
