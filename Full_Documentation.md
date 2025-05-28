@@ -171,7 +171,8 @@ echo $page ? $page : "Page not found - ensure that the protocol is entered and t
 <button>Go Back</button>
 </a>
 ```
-
+The above is inspired by Joshdick (n.d) - Referencing at the end of the document.  
+  
 Once copied in, you will then want to:
 * Click "Ctrl + X" to exit.
 * "Y"
@@ -203,6 +204,3 @@ The above line works when the user presses enter. The "@" symbol is forcing the 
 ```
 The above lines are placing the images that are saved in the /html/ directory onto the webpage - They do not require the full directory as they are saved into the same file as the index.php file.
 
-
-
-This is inspired by Joshdick (n.d) - Referencing at the end of the document.  
