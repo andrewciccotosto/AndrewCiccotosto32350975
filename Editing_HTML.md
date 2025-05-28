@@ -33,3 +33,39 @@ If you type in ls, there should be a file called "index.html" To change the web 
 Now, we are going to want to remove all the default Apache2 HTML code. The website we are creating is very basic, so not much code is needed.  
 
 Once all the code is removed, we are going to start writing the code for the web-based proxy server.  
+
+```
+<?php 
+if (isset($_GET['go'])){
+        $whatsmyip=file_get_contents("https://whatsmyip.com");
+}
+?>
+<html>
+<title>Andrew's Web Based Proxy</title>
+<br>
+<img src="logo.png" alt="Andrew's web based proxy"/>
+<br>
+<p> Enter your destination below - IP Address will be:54.66.244.57 - The IPv4 address of this server </p>
+<br>
+<p> Only https://whatsmyip.com will work 
+// Could not understand how other creators codes on how to 
+// get the file_get_contents line to work for all websites
+<form>
+<input type="url" required="required" placeholder="https://whatsmyip.com"/>
+<button name="go">Go</button
+// button named "go" to align with the  "if" at the top of the code"
+<br>
+<br>
+<img src="gplv3.png"/>
+</html>
+<?php 
+echo $whatsmyip
+// References
+// Manual. (n.d.). Www.php.net. https://www.php.net/manual/en/function.file-get-contents.php
+// W3Schools. (2019). HTML Input Types. W3schools.com. https://www.w3schoolscom/html/html_form_input_types.asp
+// https://github.com/joshdick/miniProxy/blob/master/miniProxy.php
+// I wanted to do what I could by myself, with inspiration from JoshDick MiniProxy
+// Pushing my own limits
+?>
+```
+
