@@ -68,4 +68,5 @@ echo $whatsmyip
 // Pushing my own limits
 ?>
 ```
+You should now see the website up and running when you go to your domain name on a web browser.
 
