@@ -32,3 +32,14 @@ sudo cp -R /var/www/html/ /home/ubuntu/htmlbackup/
 zip -r $today.zip /home/ubuntu/htmlbackup/*
 cp $today.zip /home/ubuntu/htmlbackup/
 ```
+
+This script is creating a ZIP file with the current date as the name of the ZIP file and saving into /home/ubuntu/htmlbackup.  
+
+### Running the script
+Before the script is run, we need to install ZIP to allow the file to be compressed when creating the backup.  
+* In terminal, type the following
+```
+sudo apt update
+sudo apt install zip
+```  
+Once ZIP has been installed, we can test the script. 
