@@ -15,3 +15,7 @@ And then we need to change the owner of the file to "Ubuntu"
 ```
 sudo chown ubuntu backuphtml
 ```
+Now the file should be able to be readable, writable and executable by all users, and the owner is "Ubuntu"  
+Next, we need to edit the script
+
+### Editing the script
