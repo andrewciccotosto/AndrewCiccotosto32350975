@@ -7,3 +7,11 @@ Now, we need to create a backup script - This will allow us to always have a bac
 ```
 touch backuphtml
 ```
+The permissions of the file need to be changed to allow for execution. Use the following
+```
+sudo chmod 777 backuphtml
+```
+And then we need to change the owner of the file to "Ubuntu"
+```
+sudo chown ubuntu backuphtml
+```
