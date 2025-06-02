@@ -50,6 +50,14 @@ In terminal, type in:
 ./backupscript
 ```
 Navigate through to /home/ubuntu/htmlbackup and there should be a ZIP file with the current days' date as the file name, as shown:  
-![8ee9cab2-2b5e-4a4b-b07c-648d843be4a4](https://github.com/user-attachments/assets/edace753-7127-42e6-a72f-3e4e5fa28c68)
+![8ee9cab2-2b5e-4a4b-b07c-648d843be4a4](https://github.com/user-attachments/assets/edace753-7127-42e6-a72f-3e4e5fa28c68)+
+
+### Finishing touches
+
+Now we are going to move the script to the /usr/bin directory. This will allow the script name to be typed into terminal from anywhere to be ran manually
+```
+sudo mv /home/ubuntu/htmlbackup /usr/bin/
+```
+Go to 
 
 
