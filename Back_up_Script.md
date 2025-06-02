@@ -19,3 +19,16 @@ Now the file should be able to be readable, writable and executable by all users
 Next, we need to edit the script
 
 ### Editing the script
+To edit the script, use the following line in Terminal
+```
+nano backupscript
+```
+Once you are editing, we need to type in the following. What this will do is create a backup of the HTML file that is located in /var/www/ - This is where the web server index.php file is stored
+```
+#!/bin/bash
+ 
+today=$(date +"%d_%m_%y")
+sudo cp -R /var/www/html/ /home/ubuntu/htmlbackup/
+zip -r $today.zip /home/ubuntu/htmlbackup/*
+cp $today.zip /home/ubuntu/htmlbackup/
+```
