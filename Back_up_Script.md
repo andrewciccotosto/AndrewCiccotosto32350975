@@ -58,6 +58,17 @@ Now we are going to move the script to the /usr/bin directory. This will allow t
 ```
 sudo mv /home/ubuntu/htmlbackup /usr/bin/
 ```
-Go to 
+Now we are going to schedule the script to run daily at 12pm to ensure that there is always a backup.
+
+```
+sudo nano /etc/crontab
+```
+
+Once the file has opened, you will see scripts that are already running automatically. Leave them, and you are going to navigate to the bottom and type in the following:
+```
+0 12   * * *   ubuntu  /usr/bin/backupscript
+```
+This is scheduling the script to run at 12pm daily, every day.
+
 
 
