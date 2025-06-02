@@ -43,3 +43,13 @@ sudo apt update
 sudo apt install zip
 ```  
 Once ZIP has been installed, we can test the script. 
+
+### Testing the Script
+In terminal, type in:
+```
+./backupscript
+```
+Navigate through to /home/ubuntu/htmlbackup and there should be a ZIP file with the current days' date as the file name, as shown:  
+![8ee9cab2-2b5e-4a4b-b07c-648d843be4a4](https://github.com/user-attachments/assets/edace753-7127-42e6-a72f-3e4e5fa28c68)
+
+
