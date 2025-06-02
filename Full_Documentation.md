@@ -238,3 +238,11 @@ Once the file has opened, you will see scripts that are already running automati
 0 12   * * *   ubuntu  /usr/bin/backupscript
 ```
 This is scheduling the script to run at 12pm daily, every day.
+
+# References
+  
+Joshdick. (n.d.). miniProxy/miniProxy.php, joshdick/miniProxy. GitHub. https://github.com/joshdick/miniProxy/blob/master/miniProxy.php  
+Manual. (n.d.). Www.php.net. https://www.php.net/manual/en/function.file-get-contents.php  
+W3Schools. (2019). HTML Input Types. W3schools.com. https://www.w3schoolscom/html/html_form_input_types.asp
+
+
